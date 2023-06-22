@@ -1,0 +1,28 @@
+<%- include('./boilerplate/header',{title:'Homepage'})%>
+<section id="hero-section" class="text-white p-12 w-full max-w-[1600px]">
+  <section class="hero-section">
+    <p class="text-6xl mb-4 font-extrabold">Welcome.</p>
+    <p class="text-2xl mb-20">
+      Discover any movie's details instantly. Start your search now!
+    </p>
+
+    <div class="bg-white text-black rounded-full flex justify-between items-center">
+      <input placeholder="Search for Movies..." id="search_it" class="text-xl sm:text-3xl w-full h-full my-4 ml-8 outline-none"/>
+      <button id="search_btn" class="bg-slate-700 text-white text-xl sm:text-3xl rounded-full px-10 py-4 mx-2 my-2">
+        Search
+      </button>
+    </div>
+  </section>
+  <section id="movies-grid" class="grid gap-8 grid-cols-[repeat(auto-fit,_minmax(185px,_278px))] mt-20 justify-center items-center">
+    <div class="flex flex-col hidden">
+        <img src="/some_image.jpg" class="m-0 rounded-xl">
+        <div class="p-4 flex flex-col items-center"> 
+            <p class="text-lg md:text-xl xl:text-2xl">Avengers Infinity war</p>
+            <p class="text-md md:text-lg xl:text-xl">2021</p> 
+        </div>
+    </div>
+  </section>
+
+</section>
+<script src="/js/homepage.js"></script>
+<%- include('./boilerplate/footer')%>
